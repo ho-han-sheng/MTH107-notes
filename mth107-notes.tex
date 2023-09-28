@@ -1,8 +1,8 @@
 \documentclass{tufte-handout}
 
-\title{An Example of the Usage of the Tufte-Handout Style\thanks{Inspired by Edward~R. Tufte!}}
+\title{MTH107 Calculus I Lecture Notes}
 
-\author[The Tufte-LaTeX Developers]{The Tufte-\LaTeX\ Developers}
+\author{Ho Han Sheng}
 
 %\date{28 March 2010} % without \date command, current date is supplied
 
@@ -33,33 +33,51 @@
 
 \maketitle% this prints the handout title, author, and date
 
+% Uncomment and add text here if needed
+
 \begin{abstract}
-\noindent
-This document describes the Tufte handout \LaTeX\ document style.
-It also provides examples and comments on the style's use.
-Only a brief overview is presented here;
-for a complete reference, see the sample book.
+  \begin{enumerate}
+    \item Inequalities
+    \item Limits
+    \item Continuity
+    \item Differentiability
+    \item Implicit Differentiation
+    \item Relative Extrema
+    \item Absolute Extrema
+    \item Mean Value Theorem
+    \item Concavity
+    \item Graph Sketching
+    \item L’Hôpital’s Rule
+    \item Taylor’s Theorem
+  \end{enumerate}
 \end{abstract}
 
 %\printclassoptions
 
-The Tufte-\LaTeX\ document classes define a style similar to the
-style Edward Tufte uses in his books and handouts.  Tufte's style is known
-for its extensive use of sidenotes, tight integration of graphics with
-text, and well-set typography.  This document aims to be at once a
-demonstration of the features of the Tufte-\LaTeX\ document classes
-and a style guide to their use.
+\section{Inequalities}\label{sec:inequalities}
+\subsection{Properties of $\mathbb{R}$}\label{sec:properties-of-real}
 
-\section{Page Layout}\label{sec:page-layout}
-\subsection{Headings}\label{sec:headings}
-This style provides \textsc{a}- and \textsc{b}-heads (that is,
-\Verb|\section| and \Verb|\subsection|), demonstrated above.
+Let $x, y, z \in \mathbb{R}$. Then we have the following properties:
+\begin{align}
+  x < y &\implies x + z < y + z \\
+  x < y &\implies x - z < y - z \\
+  x < y \text{ and } z > 0 &\implies xz < yz \\
+  x < y \text{ and } z < 0 &\implies xz > yz \\
+  z > 0 &\implies \frac{1}{z} > 0 \\
+  z < 0 &\implies \frac{1}{z} < 0 \\
+  x < y \text{ and } y < z &\implies x < z
+\end{align}
 
-The Tufte-\LaTeX\ classes will emit an error if you try to use
-\linebreak\Verb|\subsubsection| and smaller headings.
+\subsection{Modulus function}\label{sec:modulus-function}
+
+For all $x, y \in \mathbb{R}$, \marginnote{Can also be represented by $\forall x, y \in \mathbb{R}$}
+
+
+
+
 
 % let's start a new thought -- a new section
-\newthought{In his later books},\cite{Tufte2006} Tufte
+\newthought{In his later books}, Tufte
 starts each section with a bit of vertical space, a non-indented paragraph,
 and sets the first few words of the sentence in \textsc{small caps}.  To
 accomplish this using this style, use the \Verb|\newthought| command:  
